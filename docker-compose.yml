@@ -1,0 +1,13 @@
+version: "3.6"
+services:
+  template-components-lib:
+    image: template
+    build:
+      context: ./template
+      dockerfile: Dockerfile
+    ports:
+      - "4200:4200"
+    command: ${COMMAND:-sh -c "npm install && npm run start"}
+    volumes:
+      - ./template:/template
+      - ./template/node_modules:/template/node_modules
