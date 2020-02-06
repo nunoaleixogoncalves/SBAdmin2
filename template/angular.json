@@ -5,11 +5,7 @@
   "projects": {
     "SBAdmin2": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "style": "sass"
-        }
-      },
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -28,15 +24,17 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass",
+              "node_modules/startbootstrap-sb-admin-2/vendor/bootstrap/scss/bootstrap.scss",
               "node_modules/startbootstrap-sb-admin-2/vendor/fontawesome-free/css/all.min.css",
-              "node_modules/startbootstrap-sb-admin-2/css/sb-admin-2.min.css"
+              "node_modules/startbootstrap-sb-admin-2/css/sb-admin-2.min.css",
+              "src/styles.css"
             ],
             "scripts": [
               "node_modules/startbootstrap-sb-admin-2/vendor/jquery/jquery.min.js",
               "node_modules/startbootstrap-sb-admin-2/vendor/bootstrap/js/bootstrap.bundle.min.js",
               "node_modules/startbootstrap-sb-admin-2/vendor/jquery-easing/jquery.easing.min.js",
-              "node_modules/startbootstrap-sb-admin-2/js/sb-admin-2.min.js"
+              "node_modules/startbootstrap-sb-admin-2/js/sb-admin-2.min.js",
+              "node_modules/startbootstrap-sb-admin-2/vendor/chart.js/Chart.min.js"
             ]
           },
           "configurations": {
@@ -74,7 +72,10 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "SBAdmin2:build"
+            "browserTarget": "SBAdmin2:build",
+            "disableHostCheck": true,
+            "host": "0.0.0.0",
+            "servePath": "/"
           },
           "configurations": {
             "production": {
@@ -131,6 +132,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "SBAdmin2"
 }
