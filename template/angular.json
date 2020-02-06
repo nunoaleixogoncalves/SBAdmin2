@@ -5,7 +5,11 @@
   "projects": {
     "SBAdmin2": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "sass"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -24,7 +28,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
+              "src/styles.sass",
               "node_modules/startbootstrap-sb-admin-2/vendor/fontawesome-free/css/all.min.css",
               "node_modules/startbootstrap-sb-admin-2/css/sb-admin-2.min.css"
             ],
@@ -96,7 +100,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.sass"
             ],
             "scripts": []
           }
