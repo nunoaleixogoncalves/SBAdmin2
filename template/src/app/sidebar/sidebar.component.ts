@@ -9,13 +9,13 @@ export class SidebarComponent {
   }
 
   sidebarToggle() {
-    const classBody = document.getElementById('page-top').className;
-    if (classBody === 'sidebar-toggled') {
-      document.getElementById('page-top').className = '';
-      document.getElementById('accordionSidebar').className = 'navbar-nav bg-gradient-primary sidebar sidebar-dark accordion';
+    const classBody = document.getElementById('page-top').classList;
+    if (classBody.contains('sidebar-toggled')) {
+      document.getElementById('page-top').classList.remove('sidebar-toggled');
+      document.getElementById('accordionSidebar').classList.remove('toggled');
     } else {
-      document.getElementById('page-top').className = 'sidebar-toggled';
-      document.getElementById('accordionSidebar').className = 'navbar-nav bg-gradient-primary sidebar sidebar-dark accordion toggled';
+      document.getElementById('page-top').classList.add('sidebar-toggled');
+      document.getElementById('accordionSidebar').classList.add('toggled');
     }
   }
 }
