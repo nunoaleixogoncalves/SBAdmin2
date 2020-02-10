@@ -1,0 +1,72 @@
+// templating with base in sbadmin2 https://github.com/BlackrockDigital/startbootstrap-sb-admin-2
+
+// Import Custom Variables (Overrides Default Bootstrap Variables)
+@import "variables.scss";
+
+// Import Bootstrap
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Import Custom Mixins and Components
+@import "mixins.scss";
+@import "global.scss";
+@import "utilities.scss";
+
+// Custom Components
+@import "dropdowns.scss";
+@import "navs.scss";
+@import "buttons.scss";
+@import "cards.scss";
+@import "charts.scss";
+@import "login.scss";
+@import "error.scss";
+@import "footer.scss";
+
+
+/// padding content
+.container,
+.container-fluid {
+  padding-top: $padding-content-top;
+  padding-bottom: $padding-content-bottom;
+}
+
+// fixed sidebar
+.sidebar {
+  position: fixed;
+  overflow-y: auto;
+  overflow-x: hidden;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 1;
+}
+
+// colapse spacing sidebar
+body:not(.sidebar-toggled) #content-wrapper {
+  padding-left: $sidebar-base-width;
+}
+
+body.sidebar-toggled #content-wrapper {
+  padding-left: $sidebar-collapsed-width;
+}
+
+// scrollbar style
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

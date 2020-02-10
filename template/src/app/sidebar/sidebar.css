@@ -1,0 +1,12 @@
+.sidebar .sidebar-brand-text {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 35px;
+    text-transform: none;
+    color: #5D5D5D;
+}
+
+.sidebar .sidebar-brand-text span{
+    color: #007DA5;
+}

@@ -24,17 +24,14 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/startbootstrap-sb-admin-2/vendor/bootstrap/scss/bootstrap.scss",
-              "node_modules/startbootstrap-sb-admin-2/vendor/fontawesome-free/css/all.min.css",
-              "node_modules/startbootstrap-sb-admin-2/css/sb-admin-2.min.css",
-              "src/styles.css"
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "src/assets/scss/base.scss"
             ],
             "scripts": [
-              "node_modules/startbootstrap-sb-admin-2/vendor/jquery/jquery.min.js",
-              "node_modules/startbootstrap-sb-admin-2/vendor/bootstrap/js/bootstrap.bundle.min.js",
-              "node_modules/startbootstrap-sb-admin-2/vendor/jquery-easing/jquery.easing.min.js",
-              "node_modules/startbootstrap-sb-admin-2/js/sb-admin-2.min.js",
-              "node_modules/startbootstrap-sb-admin-2/vendor/chart.js/Chart.min.js"
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "node_modules/jquery.easing/jquery.easing.min.js",
+              "src/assets/js/base.js"
             ]
           },
           "configurations": {
