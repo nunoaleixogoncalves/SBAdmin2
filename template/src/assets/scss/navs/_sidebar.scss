@@ -19,6 +19,7 @@
     &.active {
       .nav-link {
         font-weight: 700;
+        border-left: 4px solid $blue;
       }
     }
     // Accordion
@@ -55,22 +56,23 @@
           color: $gray-500;
         }
         .collapse-item {
-          padding: 0.5rem 1rem;
+          padding: 0.7rem 1rem;
           margin: 0 0.5rem;
           display: block;
-          color: $gray-900;
+          color: $gray-800;
           text-decoration: none;
           border-radius: $border-radius;
           white-space: nowrap;
           &:hover {
-            background-color: $gray-200;
+            color: $blue;
           }
           &:active {
-            background-color: $gray-300;
+            background-color: none;
           }
           &.active {
-            color: $primary;
+            color: $blue;
             font-weight: 700;
+            font-size: bold;
           }
         }
       }
@@ -189,6 +191,7 @@
           }
           &.collapsed::after {
             content: "\f105";
+            color: $gray-800;
           }
         }
       }
@@ -286,28 +289,29 @@
   }
   .nav-item {
     .nav-link {
-      color: $gray-600;
+      color: $gray-800;
       i {
-        color: $gray-400;
+        color: $gray-800;
       }
       &:active,
       &:focus,
       &:hover {
-        color: $gray-700;
+        color: $blue;
+        border-left: 4px solid $blue;
         i {
-          color: $gray-700;
+          color: $blue;
         }
       }
       // Accordion
       &[data-toggle="collapse"]::after {
-        color: $gray-500;
+        color: $blue;
       }
     }
     &.active {
       .nav-link {
-        color: $gray-700;
+        color: $blue;
         i {
-          color: $gray-700;
+          color: $blue;
         }
       }
     }

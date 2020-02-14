@@ -21,7 +21,6 @@
 @import "error.scss";
 @import "footer.scss";
 
-
 /// padding content
 .container,
 .container-fluid {
@@ -40,13 +39,15 @@
   z-index: 1;
 }
 
-// colapse spacing sidebar
-body:not(.sidebar-toggled) #content-wrapper {
-  padding-left: $sidebar-base-width;
-}
-
 body.sidebar-toggled #content-wrapper {
   padding-left: $sidebar-collapsed-width;
+}
+
+body:not(.sidebar-toggled) #content-wrapper {
+  padding-left: $sidebar-base-width;
+  @include media-breakpoint-down(sm) {
+    padding-left: $sidebar-collapsed-width;
+  }
 }
 
 // scrollbar style

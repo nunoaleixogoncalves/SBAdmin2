@@ -30,6 +30,7 @@
       border-radius: $card-border-radius;
       &::after {
         content: '\f105';
+        color: $gray-800;
       }
     }
   }
