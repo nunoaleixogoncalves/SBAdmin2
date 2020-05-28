@@ -6,14 +6,18 @@ simple project based on SB admin 2 bootstrap template, transformed to be used in
 ![image](https://i.imgur.com/JgoYxUw.png)
 
 
-
 use:
 
 /template $ npm run start 
+
 or
+
 /template $ ng serve
+
 or
+
 / $ docker-compose up 
+
 
 go to localhost:4200
 
