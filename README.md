@@ -14,3 +14,8 @@ or
 / $ docker-compose up 
 
 go to localhost:4200
+
+
+
+
+![image](https://i.imgur.com/tj8Oqvl.png)
