@@ -9,7 +9,9 @@ simple project based on SB admin 2 bootstrap template, transformed to be used in
 
 use:
 
-/template $ npm start 
+/template $ npm run start 
+or
+/template $ ng serve
 or
 / $ docker-compose up 
 
